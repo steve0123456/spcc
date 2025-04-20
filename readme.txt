@@ -18,3 +18,18 @@ how to run lex:
 flex filename.l
 gcc lex.yy.c
 ./a.exe
+
+how to run yacc:
+
+win_bison -d filename.y
+win_flex filename.l
+gcc filename.tab.c lex.yy.c
+./a.exe
+
+or 
+
+yacc -d filename.y
+flex filename.l
+gcc filename.tab.c lex.yy.c
+./a.exe
+
